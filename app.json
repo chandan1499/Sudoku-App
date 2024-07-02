@@ -4,7 +4,7 @@
     "slug": "sudoku",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/sudoku.webp",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
@@ -19,12 +19,18 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/sudoku.webp",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.chandan1499.sudoku"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "1aac9cde-6480-4ad0-94fc-638b10b69b9b"
+      }
     }
   }
 }

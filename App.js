@@ -1,20 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { SafeAreaView, StyleSheet, Text, View } from "react-native";
+import { Header } from "./src/components/SudokuHeader/SudokuHeader";
+import { DifficultySelector } from "./src/components/SudokuBoard/DifficultySelector";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <SafeAreaView style={styles.safeAreaViewStyle}>
+      <Header />
+      <DifficultySelector />
       <StatusBar style="auto" />
-    </View>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+  safeAreaViewStyle: { marginTop: 50, flex: 1, overflow: 'scroll' }
 });
